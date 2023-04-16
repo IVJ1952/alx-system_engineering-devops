@@ -1,0 +1,28 @@
+
+When you type "https://www.google.com" in your browser and press enter, a complex set of actions take place behind the scenes. In this article, we will explore the different steps that occur and the technology that powers the process.
+
+DNS Request:
+The first thing that happens when you type in the website address is that your browser sends a DNS request to a DNS server. The DNS server looks up the IP address of the website domain that you entered. The DNS server is responsible for mapping domain names to IP addresses, and it retrieves the IP address of the server where the website is hosted.
+
+TCP/IP:
+Once the IP address is obtained, the browser initiates a TCP/IP connection with the server. TCP/IP is the protocol that enables communication between devices over the internet. The Transmission Control Protocol (TCP) handles the transfer of data, while the Internet Protocol (IP) handles addressing and routing.
+
+Firewall:
+Before the TCP/IP connection is established, the request passes through a firewall. The firewall serves as a security barrier between your computer and the internet, blocking potentially harmful traffic while allowing legitimate traffic to pass through.
+
+HTTPS/SSL:
+Once the TCP/IP connection is established, the browser sends an HTTPS request to the server. HTTPS is the secure version of HTTP (Hypertext Transfer Protocol), the protocol used to transfer data between the server and the client. HTTPS encrypts the data being transferred, preventing it from being intercepted or modified. The encryption is provided by the Secure Sockets Layer (SSL) or Transport Layer Security (TLS) protocol.
+
+Load-balancer:
+After the HTTPS request is received, it is forwarded to a load-balancer. The load-balancer is responsible for distributing the request to one of many servers that can fulfill the request. The load-balancer helps to distribute traffic across multiple servers, improving the reliability and availability of the website.
+
+Web server:
+The server that receives the HTTPS request is a web server. The web server processes the request, retrieves the requested resource (such as a webpage or an image), and sends it back to the client in the form of an HTTP response. The server can be running on a physical server or a cloud-based virtual machine.
+
+Application server:
+In some cases, the web server sends the request to an application server. The application server is responsible for processing the request, handling business logic, and interacting with databases or other services. Application servers are often used for dynamic websites that require user input or have interactive elements.
+
+Database:
+Finally, in many cases, the application server interacts with a database to retrieve or store information. The database stores data that the application server needs to serve the request. For example, if you are searching for a product on an e-commerce website, the application server will query the database for products that match your search criteria.
+
+In conclusion, when you type in a website address and press enter, a complex set of actions take place. The browser sends a DNS request, initiates a TCP/IP connection, sends an HTTPS request, passes through a firewall, is distributed by a load-balancer, is processed by a web server, interacts with an application server, and in some cases, interacts with a database. Understanding how these different technologies work together is essential to building and maintaining reliable and secure web applications.
