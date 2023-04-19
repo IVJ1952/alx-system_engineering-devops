@@ -3,8 +3,8 @@
 # and execute the "whoami" command
 #
 
-user="$1"
+su $1 -c "whoami"
 
-if [ "$user" ] ; then
-    chsh -s "$(which bash)" "$user" && su "$user" -c "whoami"
-fi
+$ ./0-iamsomeoneelse www-data
+www-data
+
